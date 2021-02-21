@@ -1,4 +1,4 @@
-# FinRL: A Deep Reinforcement Learning Library for Quantitative Finance [![Twitter][1.1]][1] [![Facebook][1.2]][2] [![Google+][1.3]][3] [![Linkedin][1.4]][4]
+# FinRL: A Deep Reinforcement Learning Library for Quantitative Finance [![twitter][1.1]][1] [![facebook][1.2]][2] [![google+][1.3]][3] [![linkedin][1.4]][4]
 [1.1]: http://www.tensorlet.com/wp-content/uploads/2021/01/button_twitter_22x22.png
 [1.2]: http://www.tensorlet.com/wp-content/uploads/2021/01/facebook-button_22x22.png
 [1.3]: http://www.tensorlet.com/wp-content/uploads/2021/01/button_google_22.xx_.png
@@ -14,7 +14,7 @@
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![PyPI](https://img.shields.io/pypi/v/finrl.svg)](https://pypi.org/project/finrl/)
 
-FinRL is the open source library that provides practitioners a unified framework for pipeline strategy development. **In reinforcement learning (or deep RL), an agent learns by continuously interacting with an environment, in a trial-and-error manner, making sequential decisions under uncertainty and achieving a balance between exploration and exploitation.** The open source community **AI4Finance** (to efficiently automate trading) provides educational resources to learn about deep reinforcement learning (DRL) in quantitative finance. 
+FinRL is an open source library that provides practitioners a unified framework for pipeline strategy development. **In reinforcement learning (or Deep RL), an agent learns by continuously interacting with an environment, in a trial-and-error manner, making sequential decisions under uncertainty and achieving a balance between exploration and exploitation.** The open source community **AI4Finance** (to efficiently automate trading) provides educational resources about deep reinforcement learning (DRL) in quantitative finance. 
 
 **To contribute?**  Please check the call for contributions at the end of this page.
 
@@ -22,7 +22,7 @@ Feel free to report bugs using Github issues, join our mailing list: [AI4Finance
 
 <br/>
 
-<a href="https://join.slack.com/t/ai4financeworkspace/shared_invite/zt-kq0c9het-FCSU6Y986OnSw6Wb5EkEYw" target="\_blank">
+<a href="https://join.slack.com/t/ai4financeworkspace/shared_invite/zt-myfwpei8-omxzFpznO~hMvg_FMnYRXg" target="\_blank">
 	<div align="center">
 		<img src=figs/join_slack.png width="40%"/>
 	</div>
@@ -34,7 +34,7 @@ Roadmaps of FinRL:
 
 **FinRL 1.0**: entry-level toturials for beginners, with a demonstrative and educational purpose.
 
-**FinRL 2.0**: intermediate-level framework for full-stack developers and professionals.  
+**FinRL 2.0**: intermediate-level framework for full-stack developers and professionals. As a Starter, check out [ElegantRL](https://github.com/AI4Finance-LLC/ElegantRL)  
 
 FinRL provides a unified machine learning framework for various markets, SOTA DRL algorithms, benchmark finance tasks (portfolio allocation, cryptocurrency trading, high-frequency trading), live trading, etc. 
 
@@ -80,6 +80,8 @@ We published [papers in FinTech](http://www.tensorlet.com/projects/ai-in-finance
 
 [Neurohive] [FinRL: глубокое обучение с подкреплением для трейдинга](https://neurohive.io/ru/gotovye-prilozhenija/finrl-glubokoe-obuchenie-s-podkrepleniem-dlya-trejdinga/)
 
+[ICHI.PRO] [양적 금융을위한 FinRL: 단일 주식 거래를위한 튜토리얼](https://ichi.pro/ko/yangjeog-geum-yung-eul-wihan-finrl-dan-il-jusig-geolaeleul-wihan-tyutolieol-61395882412716)
+
 
 # Overview
 
@@ -92,7 +94,7 @@ A YouTube video about FinRL library.  [YouTube] [AI4Finance Channel](https://www
 
 # DRL Algorithms 
 
-We implemented Deep Q Learning (DQN), Double DQN, DDPG, A2C, SAC, PPO, TD3, GAE, MADDPG, InterSAC, InterAC, MuZero, etc. using PyTorch and OpenAI Gym. 
+We implemented Deep Q Learning (DQN), Double DQN, DDPG, A2C, SAC, PPO, TD3, GAE, MADDPG, MuZero, etc. using PyTorch and OpenAI Gym. 
 
 # Status
 <details><summary><b>Version History</b> <i>[click to expand]</i></summary>
@@ -131,16 +133,15 @@ Build the container:
 $ docker build -f docker/Dockerfile -t finrl docker/
 ```
 
-Start the container
-Note: The default container run starts jupyter lab in the root directory, allowing you to run scripts, notebooks, etc.
+Start the container:
 ```bash
 $ docker run -it --rm -v ${PWD}:/home -p 8888:8888 finrl
 ```
-
+Note: The default container run starts jupyter lab in the root directory, allowing you to run scripts, notebooks, etc.
 
 ## Bare-metal installation (More difficult)
 
-Clone this repository
+Clone this repository:
 ```shell
 git clone https://github.com/AI4Finance-LLC/FinRL-Library.git
 ```
@@ -152,7 +153,7 @@ pip install git+https://github.com/AI4Finance-LLC/FinRL-Library.git
 
 
 ## Prerequisites
-For [OpenAI Baselines](https://github.com/openai/baselines), you'll need system packages CMake, OpenMPI and zlib. Those can be installed as follows
+For [OpenAI Baselines](https://github.com/openai/baselines), you'll need system packages CMake, OpenMPI and zlib. Those can be installed as follows:
 
 #### Ubuntu
 
@@ -171,11 +172,11 @@ brew install cmake openmpi
 To install stable-baselines on Windows, please look at the [documentation](https://stable-baselines3.readthedocs.io/en/master/guide/install.html#prerequisites).
     
 #### Create and Activate Python Virtual-Environment (Optional but highly recommended)
-cd into this repository
+cd into this repository:
 ```bash
 cd FinRL-Library
 ```
-Under folder /FinRL-Library, create a Python virtual-environment
+Under folder /FinRL-Library, create a Python virtual-environment:
 ```bash
 pip install virtualenv
 ```
@@ -197,7 +198,7 @@ venv\Scripts\activate
 ```
 ## Dependencies
 
-The script has been tested running under **Python >= 3.6.0**, with the folowing packages installed:
+The script has been tested running under **Python >= 3.6.0**, with the following packages installed:
 
 ```shell
 pip install -r requirements.txt
@@ -211,7 +212,6 @@ Stable-Baselines3 is a set of improved implementations of reinforcement learning
 
 ```
 pip install stable-baselines3[extra]
-
 ```
 A migration guide from SB2 to SB3 can be found in the [documentation](https://stable-baselines3.readthedocs.io/en/master/guide/migration.html).
 
@@ -229,7 +229,7 @@ Use Quantopian's [pyfolio package](https://github.com/quantopian/pyfolio) to do 
 
 
 ### Data
-The stock data we use is pulled from Yahoo Finance API
+The stock data we use is pulled from Yahoo Finance API.
 
 (The following time line is used in the paper; users can update to new time windows.)
 
@@ -249,30 +249,30 @@ The stock data we use is pulled from Yahoo Finance API
     author  = {Liu, Xiao-Yang and Yang, Hongyang and Chen, Qian and Zhang, Runjia and Yang, Liuqing and Xiao, Bowen and Wang, Christina Dan},
     journal = {Deep RL Workshop, NeurIPS 2020},
     title   = {FinRL: A Deep Reinforcement Learning Library for Automated Stock Trading in Quantitative Finance},
-    url     = {},
+    url     = {https://arxiv.org/pdf/2011.09607.pdf},
     year    = {2020}
 }
 ```
 
 ## Call for Contributions
 
-We will maintain the open source FinRL library for the "AI + finance" community and welcome you to join as contributors!
+Will maintain FinRL with the "AI4Finance" community and welcome your contributions!
 
 ### Contributors
 
-This project exists thanks to all the people who contribute. 
+Thanks to all the people who contribute. 
 <a href="https://github.com/AI4Finance-LLC/FinRL-Library/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=AI4Finance-LLC/FinRL-Library" />
 </a>
 
 ## Support various markets
-   We would like to support more asset markets, so that the users can test their stategies.
+   Would like to support more asset markets, so that the users can test their stategies.
 ## SOTA DRL algorithms 
-   We will continue to maintian a pool of DRL algorithms that can be treated as SOTA implementations.
+   Will continue to maintian a pool of DRL algorithms that can be treated as SOTA implementations.
 ## Benchmarks for typical trading tasks
-   To help quants have better evaluations, here we maintain benchmarks for many trading tasks, upon which you can improve for your own tasks.
+   To help quants have better evaluations, will maintain benchmarks for many trading tasks, upon which you can improve for your own tasks.
 ## Support live trading
-   Supporting live trading can close the simulation-reality gap, it will enable quant to switch to the real market when they are confident with their strategies.
+   Supporting live trading can close the simulation-reality gap, it will enable quants to switch to the real market when they are confident with their strategies.
    
 # LICENSE
 
